@@ -1,6 +1,6 @@
-# Eventmachine::Swinsian
+# eventmachine-swinsian
 
-TODO: Write a gem description
+An {EventMachine}[http://wiki.github.com/eventmachine/eventmachine/] extension to watch {Swinsian}[http://swinsian.com/] play/pause/stop
 
 ## Installation
 
@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+module Watcher
+  def on_play(info)
+    puts 'now playing %s' % [info['artist'], info['title']].join(' - ')
+  end
+end
+
+EM.run {
+  EM.watch_swinsian(Watcher)
+}
+```
 
 ## Contributing
 
@@ -27,3 +37,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## See also
+
+- http://swinsian.com/support/developers.html
