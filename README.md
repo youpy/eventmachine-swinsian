@@ -1,6 +1,6 @@
 # eventmachine-swinsian
 
-An {EventMachine}[http://wiki.github.com/eventmachine/eventmachine/] extension to watch {Swinsian}[http://swinsian.com/] play/pause/stop
+An [EventMachine](http://wiki.github.com/eventmachine/eventmachine/) extension to watch [Swinsian](http://swinsian.com/) play/pause/stop
 
 ## Installation
 
